@@ -1,0 +1,22 @@
+{
+  "name": "css-generator",
+  "version": "1.0.0",
+  "description": "Write CSS programatically using JavaScript",
+  "main": "src/generator.js",
+  "scripts": {
+    "test": "node demo/demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizbills/css-generator.js.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Luiz Bills",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luizbills/css-generator.js/issues"
+  },
+  "homepage": "https://github.com/luizbills/css-generator.js#readme"
+}
