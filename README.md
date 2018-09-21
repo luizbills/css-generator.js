@@ -13,7 +13,7 @@ npm install css-generator
 ```js
 const CSSGenerator = require('css-generator');
 const options = {
-    indentation: '    ' // 4 spaces
+    indentation: '  ' // 2 spaces
 }
 const css = cssGen.create(options);
 
