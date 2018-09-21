@@ -11,7 +11,7 @@ npm install css-generator
 ## Usage
 
 ```js
-const CSSGenerator = require('css-generator');
+const cssGen = require('css-generator');
 const options = {
     indentation: '  ' // 2 spaces
 }
