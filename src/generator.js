@@ -64,4 +64,6 @@ class Generator {
     }
 }
 
-module.exports = Generator;
+exports.create = function (options) {
+    return new Generator(options)
+}

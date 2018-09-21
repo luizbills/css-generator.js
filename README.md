@@ -11,11 +11,11 @@ npm install css-generator
 ## Usage
 
 ```js
-const CSSGenerator = require('../src/generator');
+const CSSGenerator = require('css-generator');
 const options = {
     indentation: '    ' // 4 spaces
 }
-const css = new CSSGenerator(options);
+const css = cssGen.create(options);
 
 css.addRule('.color-white', {
     color: 'white'

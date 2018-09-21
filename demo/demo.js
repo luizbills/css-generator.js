@@ -1,8 +1,8 @@
-const CSSGenerator = require('../src/generator');
+const cssGen = require('../src/generator');
 const options = {
 	indentation: '  '
 }
-const css = new CSSGenerator(options);
+const css = cssGen.create(options);
 
 css.addRule('.color-white', {
 	color: 'white'
