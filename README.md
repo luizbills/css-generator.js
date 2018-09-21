@@ -1,6 +1,6 @@
 # CSS Generator
 
-Write css programatically using JavaScript.
+Write CSS programatically using JavaScript.
 
 ## Install
 
