@@ -1,6 +1,6 @@
 {
   "name": "css-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write CSS programatically using JavaScript",
   "main": "src/generator.js",
   "scripts": {
