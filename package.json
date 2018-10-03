@@ -4,7 +4,8 @@
   "description": "Write CSS programatically using JavaScript",
   "main": "src/generator.js",
   "scripts": {
-    "test": "node demo/demo.js"
+    "demo": "node demo/demo.js",
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
