@@ -84,15 +84,5 @@ output:
 /* my comment */ a { text-decoration: none }
 ```
 
-And you can clean all CSS using `clean()`:
-```js
-css.clean()
-console.log(css.getOutput())
-```
-
-output:
-```css
-```
-
 ## License
 MIT License &copy; 2018 Luiz Bills

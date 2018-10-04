@@ -55,5 +55,3 @@ const rawOutput = `/* my comment */
 `
 
 assert.equal(css.getOutput(), rawOutput)
-css.clean()
-assert.equal(css.getOutput(), '')

@@ -10,10 +10,6 @@ class Generator {
         this._options = Object.assign(this._defaults, options)
     }
 
-    clean () {
-        this._raw = ''
-    }
-
     getOutput ( compress = false ) {
         this.closeBlocks()
         return this._raw
