@@ -15,10 +15,6 @@ class Generator {
         return this._raw
     }
 
-    addRaw (string) {
-        this._raw += string
-    }
-
     addRule (selectors, declarationList) {
         const declarations = []
         const selectorIndentation = this._options['indentation'].repeat(this._blockLevel)
@@ -41,6 +37,29 @@ class Generator {
         this._raw += selectors.join(',' + linebreak) + ' {'
         this._raw += linebreak + declarations.join('')
         this._raw += selectorIndentation + '}' + linebreak
+    }
+    
+    addRaw (text) {
+        this._raw += text
+    }
+    
+    /**
+     * usage:
+     *   css.addComment('inline comment');
+     *   css.addComment(['block', 'comment']);
+    */
+    addComment (text) {
+        const indentation = this._options['indentation'].repeat(this._blockLevel)
+        const css = this
+        if (!Array.isArray(text)) {
+            text = [text]
+        }
+        
+        css._raw += '/**' + this._linebreak
+        text.map(function (value) {
+            css._raw += ' * ' + value + this._linebreak
+        })
+        css._raw += ' */' + this._linebreak
     }
 
     openBlock (type, props = '') {
