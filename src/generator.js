@@ -62,6 +62,10 @@ class Generator {
             this.closeBlock()
         }
     }
+    
+    getBlockLevel () {
+        return this._blockLevel;
+    }
 }
 
 exports.create = function (options) {
